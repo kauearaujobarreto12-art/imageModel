@@ -2,17 +2,16 @@
 PASSO_DIVISORES = 6
 
 def eh_primo(n: int) -> bool:
-    """
-    Verifica se um número é primo usando um algoritmo otimizado.
+    """Verifica se um número é primo usando um algoritmo otimizado.
 
     Args:
-        n (int): O número a ser verificado.
+        n (int): Número a ser verificado. Deve ser um inteiro não negativo.
 
     Returns:
-        bool: True se n for primo, False caso contrário.
+        bool: True se `n` for primo, False caso contrário.
 
     Raises:
-        ValueError: Se n não for um inteiro não negativo.
+        ValueError: Se `n` não for um inteiro não negativo.
     """
     if not isinstance(n, int) or n < 0:
         raise ValueError("O número deve ser um inteiro não negativo.")
